@@ -1,0 +1,166 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* eBASE Africa Brand Colors — Clean Light Theme */
+  --background: #ffffff;
+  --surface: #f5f4f2;
+  --surface-raised: #ffffff;
+  --foreground: #4b371c;
+  --body: #5d4730;
+  --muted-text: #9a8976;
+  --green-accent: #009e60;
+  --blue-accent: #89d0f0;
+  --purple-accent: #cfcfe1;
+  --border-color: rgba(0, 158, 96, 0.15);
+  --border-subtle: rgba(93, 71, 48, 0.08);
+
+  /* Shadcn tokens mapped to eBASE brand */
+  --card: #ffffff;
+  --card-foreground: #4b371c;
+  --popover: #ffffff;
+  --popover-foreground: #4b371c;
+  --primary: #009e60;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f4f2;
+  --secondary-foreground: #5d4730;
+  --muted: #f5f4f2;
+  --muted-foreground: #9a8976;
+  --accent: #89d0f0;
+  --accent-foreground: #4b371c;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: rgba(0, 158, 96, 0.15);
+  --input: #f5f4f2;
+  --ring: #009e60;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), 'Inter', sans-serif;
+  --font-serif: var(--font-playfair), 'Playfair Display', serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--foreground);
+  }
+}
+
+/* Utility classes for COP platform */
+.cop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green-accent);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid var(--green-accent);
+  border-radius: var(--radius);
+}
+
+.glow-green {
+  box-shadow: 0 4px 16px rgba(0, 158, 96, 0.1);
+}
+
+.section-divider {
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Badge styles */
+.badge-open {
+  background: rgba(0, 158, 96, 0.1);
+  color: var(--green-accent);
+  border: 1px solid var(--green-accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-request {
+  background: rgba(137, 208, 240, 0.1);
+  color: var(--blue-accent);
+  border: 1px solid var(--blue-accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-restricted {
+  background: rgba(207, 207, 225, 0.15);
+  color: #5d4730;
+  border: 1px solid var(--purple-accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Radial glow backgrounds */
+.hero-glow {
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 158, 96, 0.06) 0%, transparent 60%);
+}
+
+.section-glow {
+  background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(0, 158, 96, 0.03) 0%, transparent 60%);
+}
