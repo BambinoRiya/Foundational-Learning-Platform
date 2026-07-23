@@ -21,10 +21,15 @@ const navItems = [
     children: [
       { label: 'Evidence Hub', href: '/evidence-hub' },
       { label: 'Data Hub', href: '/data-hub' },
-      { label: 'Knowledge Products', href: '/knowledge-products' },
     ],
   },
-  { label: 'Reports', href: '/reports' },
+  {
+    label: 'Resources',
+    href: '/reports',
+    children: [
+      { label: 'Reports', href: '/reports' },
+    ],
+  },
   { label: 'Get Involved', href: '/get-involved' },
 ]
 
