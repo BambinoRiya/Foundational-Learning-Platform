@@ -51,33 +51,10 @@ const cataloguedDatasets: CataloguedDataset[] = [
   },
 ]
 
-const getAccessBadge = (access: string) => {
-  switch (access) {
-    case 'open':
-      return {
-        label: 'Open',
-        className: 'bg-green-100 text-green-700 border border-green-300',
-      }
-    case 'request':
-      return {
-        label: 'By request',
-        className: 'bg-amber-100 text-amber-700 border border-amber-300',
-      }
-    case 'restricted':
-      return {
-        label: 'Restricted',
-        className: 'bg-red-100 text-red-600 border border-red-300',
-      }
-    case 'pending':
-      return {
-        label: '[ ]',
-        className: 'bg-gray-100 text-gray-500 border border-gray-300',
-      }
-    default:
-      return {
-        label: access,
-        className: 'bg-gray-100 text-gray-500 border border-gray-300',
-      }
+const getAccessBadge = (_access: string) => {
+  return {
+    label: 'N/A',
+    className: 'bg-red-50 text-red-600 border border-red-200',
   }
 }
 
@@ -111,8 +88,8 @@ export default function DataHub() {
               <p className="eyebrow mb-2">Dataset Catalog</p>
               <h2 className="font-serif text-3xl font-bold text-foreground mb-3">Catalogued Datasets</h2>
               <p className="text-base max-w-3xl" style={{ color: '#5d4730' }}>
-                The table below lists datasets that have been identified, verified and catalogued with metadata. 
-                Access levels indicate whether data is openly available, available on request, or restricted.
+                The table below lists datasets that have been identified, verified and catalogued with metadata.
+                Access levels are currently marked N/A pending confirmation from data holders.
               </p>
             </div>
 
@@ -165,34 +142,14 @@ export default function DataHub() {
             </div>
 
             {/* Access Legend */}
-            <div
-              className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4"
-            >
+            <div className="mt-6">
               <div
                 className="flex items-center gap-3 px-4 py-3 rounded-lg"
-                style={{ background: 'rgba(34, 197, 94, 0.1)', border: '1px solid rgba(34, 197, 94, 0.3)' }}
+                style={{ background: 'rgba(239, 68, 68, 0.06)', border: '1px solid rgba(239, 68, 68, 0.2)' }}
               >
-                <span className="inline-block w-3 h-3 rounded-full bg-green-500"></span>
-                <span className="text-sm" style={{ color: '#166534' }}>
-                  <strong>Open</strong> — freely downloadable
-                </span>
-              </div>
-              <div
-                className="flex items-center gap-3 px-4 py-3 rounded-lg"
-                style={{ background: 'rgba(245, 158, 11, 0.1)', border: '1px solid rgba(245, 158, 11, 0.3)' }}
-              >
-                <span className="inline-block w-3 h-3 rounded-full bg-amber-500"></span>
-                <span className="text-sm" style={{ color: '#92400e' }}>
-                  <strong>By request</strong> — contact data holder
-                </span>
-              </div>
-              <div
-                className="flex items-center gap-3 px-4 py-3 rounded-lg"
-                style={{ background: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.3)' }}
-              >
-                <span className="inline-block w-3 h-3 rounded-full bg-red-500"></span>
+                <span className="inline-block w-3 h-3 rounded-full bg-red-400"></span>
                 <span className="text-sm" style={{ color: '#991b1b' }}>
-                  <strong>Restricted</strong> — formal agreement required
+                  <strong>N/A</strong> — access status not yet documented for this dataset
                 </span>
               </div>
             </div>

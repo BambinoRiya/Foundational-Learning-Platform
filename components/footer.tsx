@@ -9,7 +9,7 @@ export default function Footer() {
         borderColor: 'rgba(0, 158, 96, 0.08)',
       }}
     >
-      <div className="cop-container py-12">
+      <div className="cop-container pt-40 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
