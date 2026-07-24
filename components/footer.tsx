@@ -3,13 +3,13 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer
-      className="mt-auto border-t"
+      className="mt-auto border-t pt-[6rem] mt-[6rem] pb-20"
       style={{
         background: '#ffffff',
         borderColor: 'rgba(0, 158, 96, 0.08)',
       }}
     >
-      <div className="cop-container pt-40 pb-20">
+      <div className="cop-container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">

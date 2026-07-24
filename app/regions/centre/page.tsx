@@ -293,7 +293,9 @@ export default function CentrePage() {
           </div>
 
           <div className="mt-6">
-            <button
+            <a
+              href="/downloads/cop-workshop-yaounde-learning-agenda.pdf"
+              download
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold"
               style={{
                 background: '#009e60',
@@ -302,7 +304,7 @@ export default function CentrePage() {
               }}
             >
               Download Full Learning Agenda →
-            </button>
+            </a>
           </div>
         </div>
       </section>
