@@ -286,7 +286,9 @@ export default function NorthwestPage() {
           </div>
 
           <div className="mt-6">
-            <button
+            <a
+              href="/downloads/research-agenda-nw-region-2.pdf"
+              download
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold"
               style={{
                 background: '#009e60',
@@ -294,7 +296,7 @@ export default function NorthwestPage() {
               }}
             >
               Download Full Learning Agenda →
-            </button>
+            </a>
           </div>
         </div>
       </section>

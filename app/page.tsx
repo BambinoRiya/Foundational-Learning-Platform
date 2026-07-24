@@ -1,6 +1,14 @@
 import Link from 'next/link'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
+import ImageCarousel from '@/components/image-carousel'
+
+const landingImages = [
+  { src: '/landing/IMG_0064.JPG', alt: 'CoP workshop — Northwest Region' },
+  { src: '/landing/IMG_0235.JPG', alt: 'CoP workshop — Northwest Region' },
+  { src: '/landing/IMG_0256.JPG', alt: 'CoP workshop — Northwest Region' },
+  { src: '/landing/IMG_0316.JPG', alt: 'CoP workshop — Northwest Region' },
+]
 
 const workstreams = [
   {
@@ -259,6 +267,20 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* ── COMMUNITY GALLERY ── */}
+      <section className="py-16 md:py-20">
+        <div className="cop-container">
+          <div className="eyebrow mb-3">From the Field</div>
+          <h2
+            className="text-3xl md:text-4xl font-bold mb-8 text-balance"
+            style={{ color: '#4b371c', fontFamily: 'Georgia, serif' }}
+          >
+            The Community of Practice in action
+          </h2>
+          <ImageCarousel images={landingImages} />
+        </div>
+      </section>
 
       {/* ── WORKSTREAMS ── */}
       <section className="py-24">
