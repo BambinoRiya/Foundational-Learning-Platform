@@ -131,7 +131,9 @@ export default function NorthwestPage() {
                 offline-first digital architecture — a direct response to the region&apos;s connectivity
                 and security realities.
               </p>
-              <button
+              <a
+                href="/downloads/research-agenda-nw-region-2.pdf"
+                download
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold"
                 style={{
                   background: '#009e60',
@@ -139,7 +141,7 @@ export default function NorthwestPage() {
                 }}
               >
                 Download PDF →
-              </button>
+              </a>
             </div>
             <div
               className="p-8 rounded-2xl"
