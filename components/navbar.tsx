@@ -30,6 +30,7 @@ const navItems = [
       { label: 'Reports', href: '/reports' },
     ],
   },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Get Involved', href: '/get-involved' },
 ]
 

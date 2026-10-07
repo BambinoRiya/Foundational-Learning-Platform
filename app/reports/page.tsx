@@ -68,6 +68,33 @@ export default function Reports() {
       access: 'open',
       file: '/downloads/cop-inaugural-report-2026.pdf',
     },
+    {
+      type: 'Review Protocol',
+      title: 'Data Sharing Practices in Foundational Learning Systems: A Scoping Review of Barriers, Facilitators, Interventions, and Governance Frameworks in Sub-Saharan Africa',
+      description: 'Protocol for a scoping review by Working Group 1 of the Northwest Region Community of Practice, examining data sharing practices and governance frameworks in foundational learning systems.',
+      date: 'September 2026',
+      icon: FileText,
+      access: 'open',
+      file: '/downloads/Protocol_WG1_Data_Sharing_updated_2026-09-22-1.pdf',
+    },
+    {
+      type: 'Review Protocol',
+      title: 'Effectiveness of Teaching Approaches on Foundational Learning in Emergency Contexts in Sub-Saharan Africa: A Systematic Review Protocol',
+      description: 'Protocol for a systematic review by Working Group 2 of the Northwest Region Community of Practice, assessing the effectiveness of teaching approaches for foundational learning in emergency contexts.',
+      date: 'September 2026',
+      icon: FileText,
+      access: 'open',
+      file: '/downloads/Protocol_WG2_NW_Teaching_Approaches_updated_2026-09-22.pdf',
+    },
+    {
+      type: 'Review Protocol',
+      title: 'Inclusion of Vulnerable Children in Emergency Education in Sub-Saharan Africa: A Scoping Review of Approaches, Barriers, and Facilitators',
+      description: 'Protocol for a scoping review by Working Group 3 of the Northwest Region Community of Practice, exploring approaches to including vulnerable children in emergency education.',
+      date: 'September 2026',
+      icon: FileText,
+      access: 'open',
+      file: '/downloads/Protocol_WG3_NW_Vulnerable_Children_updated_2026-09-22.pdf',
+    },
   ]
 
   return (

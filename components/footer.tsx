@@ -42,6 +42,7 @@ export default function Footer() {
                 { label: 'Evidence Hub', href: '/evidence' },
                 { label: 'Data Hub', href: '/data-hub' },
                 { label: 'Reports', href: '/reports' },
+                { label: 'Gallery', href: '/gallery' },
               ].map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-sm transition-colors hover:text-primary" style={{ color: '#9a8976' }}>
